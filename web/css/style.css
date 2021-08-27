@@ -1,0 +1,170 @@
+:root {
+      --text-color: #f0f3f5;
+      --background-color: #263343;
+      --accent-color: #d49466;
+      
+      }
+body {
+      margin: 0;
+      font-family: 'Nanum Gothic', sans-serif;
+      }
+
+a {
+      text-decoration: none;
+      color: var(--text-color);
+      }
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--background-color);
+      padding: 8px 12px;
+      
+      }
+
+.navbar_logo {
+      font-size: 24px;
+      color: var(--text-color);
+      }
+
+.navbar_logo i {
+      color: var(--accent-color);
+      }
+
+.navbar_links {
+      color: var(--text-color);
+      }
+
+.navbar_menu {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      
+      }
+
+.navbar_menu li {
+      padding: 8px 12px;
+      }
+
+.navbar_menu li:hover {
+      background-color: var(--accent-color);
+      border-radius: 4px;
+      }
+
+.navbar_icons {
+      list-style: none;
+      color: var(--text-color);
+      display: flex;
+      padding: 0;
+      }
+
+
+.navbar_icons  a {
+      padding: 8px 12px;
+      cursor: pointer;
+      }
+
+
+.navbar_toogleBtn {
+      display: none;
+      position: absolute;
+      right: 32px;
+      top: 8px;
+      font-size: 24px;
+      color: var(--accent-color);
+      }
+.section_1 .content .highlight {
+      color: blue;
+      
+      }
+.section_1 .content .highlight:hover {
+      color: red;
+      }
+.trello_Btn a button {
+      
+      }
+@media screen and (max-width: 768px) {
+      .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 8px 24px;
+            }
+      
+      .navbar_menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            }
+      
+      .navbar_menu li {
+            width: 100%;
+            text-align: center;
+            }
+      
+      .navbar_icons {
+            display: none;
+            justify-content: center;
+            width: 100%;
+            }
+      
+      .navbar_toogleBtn {
+            display: block;
+            }
+      
+      .navbar_menu.active,
+      .navbar_icons.active {
+            display: flex;
+            padding: 0;
+            }
+            
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
