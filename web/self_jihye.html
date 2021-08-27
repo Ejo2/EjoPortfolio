@@ -119,7 +119,7 @@
                                 </div>
                             </div>
                             <img class="img-fluid" src="http://127.0.0.1:8887/Images/eating%20(1).gif" alt="..." />
-                        </a>
+                       </a>
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="https://youtu.be/7UDe1PRB8Ss" target="_blank">
@@ -202,9 +202,38 @@
 		        center: new kakao.maps.LatLng(37.48324874018767, 126.97471542699941), 
 		        level: 7, 
 		        mapTypeId : kakao.maps.MapTypeId.ROADMAP 
-		    }; 
-	
+		    }; 	
 		let map = new kakao.maps.Map(mapContainer, mapOption); 	
+		
+	//geolocation추가 20210828
+		if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(function(position) {
+		        let lat = position.coords.latitude, // 위도
+		            lon = position.coords.longitude; // 경도        
+		        let locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치생성
+		            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; 
+     		   displayMarker(locPosition, message);            
+  	 	   });    
+		} else { // GeoLocation을 사용할 수 없을때   
+   			let locPosition = new kakao.maps.LatLng(37.48324874018767, 126.97471542699941),    
+        		message = 'geolocation을 사용할수 없어요..'        
+		    	displayMarker(locPosition, message);
+		}
+		function displayMarker(locPosition, message) {		// 지도에 마커와 인포윈도우를 표시하는 함수
+		    let marker = new kakao.maps.Marker({  
+		        map: map, 
+		        position: locPosition
+		    });		    
+		    let iwContent = message, 
+		        iwRemoveable = true;
+		    let infowindow = new kakao.maps.InfoWindow({
+		        content : iwContent,
+		        removable : iwRemoveable
+		    });
+		    infowindow.open(map, marker);
+		    map.setCenter(locPosition);      
+		}    	
+		
 		let homemarker = new kakao.maps.Marker({
 		    position: new kakao.maps.LatLng(37.48108, 126.90842), map: map 
 		});		
@@ -215,5 +244,5 @@
 	 <!-- Bootstrap core JS-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
        <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts_jihye.js"></script>
 </html>
