@@ -14,6 +14,21 @@ function toggleBtn_Click() {
 function alert_1() {
   swal("qkrtkdwns3410@naver.com");
 }
+function alert_trello() {
+  Swal.fire({
+    title: 'Are you sure??',
+    text: "트렐로를 이 창에서 여시겠습니까?",
+    icon: 'info',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'OK'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location="../Trello.html"
+    }
+  })
+}
 
 function dragStart() {
   dt.setData("text/plain", "상준");
