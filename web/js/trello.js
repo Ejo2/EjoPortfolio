@@ -115,7 +115,7 @@ columns.forEach(column => { // columns 안에 column div 객체를 하나씩 담
                 onkeyup="newTask(event,${column.id})"
                 onclick="showAddTasksMenu(event)" class="textAddTask"></textarea>
                 <div class="addDelTask">
-                    <input type="button" value="생성" class="buttonAddTask" onclick="newTask(event,${column.id})">
+                    <input type="button" disabled value="Press Enter" class="buttonAddTask" onclick="newTask(event,${column.id})">
                     <a href="#"><img src="cancelar.png" alt="" class="imgHideAddTask" onclick="hideAddTasksMenu(event)"></a>
 		        </div>
 	        </div>
@@ -278,7 +278,7 @@ function newColumn(event) {
                         onkeydown="adjustHeightAddNewTask(event)" onkeyup="newTask(event,${columnId})" 
                         onclick="showAddTasksMenu(event)" class="textAddTask"></textarea>
                         <div class="addDelTask">
-                            <input type="button" value="생성" class="buttonAddTask" onkeyup="newTask(event,${columnId})">
+                            <input type="button" disabled value="Press Enter" class="buttonAddTask" onkeyup="newTask(event,${columnId})">
                             <a href="#"><img src="../img/cancelar.png" alt="" class="imgHideAddTask"></a>
                         </div>
                     </div>
@@ -314,7 +314,7 @@ function adjustHeightAddNewTask(event) { //이거 왜 여깄음? css에 안가�
 function newTask(event, columnId) {
   let title = "";
   //title을 String으로 선언 /////////
-  if (event.key === "Enter") { //엔터가 입력된다면
+  if (event.key === "Enter" ) { //엔터가 입력된다면
     title = event.target.value.replace(/\n/ig, "");
     //이벤트 객체에 담겨있는 현재의 텍스트 값중 개행문자를 공 치환후 title 변수에 담음
     event.target.value = ""; //값은 null로
