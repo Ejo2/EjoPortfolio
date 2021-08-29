@@ -25,5 +25,6 @@
     <orderEntry type="library" name="jquery-ui" level="application" />
     <orderEntry type="library" name="embed" level="application" />
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="simple-line-icons" level="application" />
   </component>
 </module>

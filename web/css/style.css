@@ -133,7 +133,7 @@ button:hover {
 
 .section input[id*="slide"] {display: none;}
 
-.section .slidewrap {max-width: 1500px;}
+.section .slidewrap {max-width: 7000px;}
 
 .section .slidelist {white-space: nowrap;font-size: 0;overflow: hidden;position: relative;}
 
