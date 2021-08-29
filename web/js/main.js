@@ -24,8 +24,8 @@ function alert_trello() {
     cancelButtonColor: '#d33',
     confirmButtonText: 'OK'
   }).then((result) => {
-    if (result.isConfirmed) {
-      window.location="../Trello.html"
+    if (result.isConfirmed) {	
+      location.href="Trello.html";
     }
   })
 }
