@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afabd9b670ed83e734f7cfc8bda4e89b"></script>
+    <link rel="stylesheet" href="css/style_yesol.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">Yes, All</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#myPage">HOME</a></li>
+                <li><a href="#band">ABOUT</a></li>
+                <!--<li><a href="#tour">BLOG</a></li>-->
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">SNS
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">FACEBOOK</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="img/cafeLyan.png" alt="New York" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3>카페러버</h3>
+                <p>지금 이 페이지도 투썸에서 만들고 있답니다</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/driveLyan.png" alt="Chicago" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3>여행의 멋짐</h3>
+                <p>드라이브와 여행을 좋아하는 개발자랍니다</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/homeLyan.png" alt="Los Angeles" width="1200" height="700">
+            <div class="carousel-caption">
+                <h3>타고난 집순이</h3>
+                <p>집에 있을때 가장 행복합니다</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+    <h3>About me</h3>
+    <p><em>예솔의 프리스타일 블로그입니다</em></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio
+        facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
+        pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis.
+        Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum
+        integer enim neque volutpat ac.
+    </p>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Blog</strong></p><br>
+            <a href="#demo" data-toggle="collapse">
+                <img src="img/최2.png" alt="Random Name" width="170px" height="170px">
+            </a>
+            <div id="demo" class="collapse">
+                <p> </p>
+                <p>각종 코딩공부 관련 포스팅 하는곳</p>
+                <p>가끔 신변잡기도 올림</p>
+                <p>https://blog.naver.com/geenyou</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>GitHub</strong></p><br>
+            <a href="#demo2" data-toggle="collapse">
+                <img src="img/최1.png" alt="Random Name" width="170px" height="170px">
+            </a>
+            <div id="demo2" class="collapse">
+                <p> </p>
+                <p>팀/개인 프로젝트 업로드</p>
+                <p>https://github.com/yesolje</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Slack</strong></p><br>
+            <a href="#demo3" data-toggle="collapse">
+                <img src="img/최3.png"  alt="Random Name" width="170px" height="170px">
+            </a>
+            <div id="demo3" class="collapse">
+                <p> </p>
+                <p>팀원들과 사용하는 협업툴</p>
+                <p>https://app.slack.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<!--  <div id="tour" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">TOUR DATES</h3>
+            <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+            <ul class="list-group">
+                <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">November <span class="badge">3</span></li>
+            </ul>
+
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="paris.jpg" alt="Paris" width="400" height="300">
+                        <p><strong>Paris</strong></p>
+                        <p>Friday 27 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="newyork.jpg" alt="New York" width="400" height="300">
+                        <p><strong>New York</strong></p>
+                        <p>Saturday 28 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sunday 29 November 2015</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23
+                            per person</label>
+                        <input type="number" class="form-control" id="psw" placeholder="How many?">
+                    </div>
+                    <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-block">Pay
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <p>Need <a href="#">help?</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>우리 , 소통해요!</em></p>
+
+<!--카카오맵-->
+    <div class="mapHere">
+        <div id="map"></div>
+        <div>
+            <div class="btn mapchoose" id="maphome">home</div>
+            <br>
+            <div class="btn mapchoose"id="mapacademy">academy</div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p>■ 연락처 정보</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>경기도 성남시, 대한민국</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 10-1234-5678</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: geenyou@naver.com</p>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3 class="text-center">2조 친구들</h3>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home" class="partner">박상준</a></li>
+        <li><a data-toggle="tab" href="#menu1" class="partner">신지혜</a></li>
+        <li><a data-toggle="tab" href="#menu2"class="partner">조엄지</a></li>
+        <li><a data-toggle="tab" href="#menu3"class="partner">강병민</a></li>
+        <li><a data-toggle="tab" href="#menu4"class="partner">황서정</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h2 class="partner">조장 박상준</h2>
+            <p>geenyou@naver.com</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h2 class="partner">신지혜</h2>
+            <p>geenyou@naver.com</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h2 class="partner">조엄지</h2>
+            <p>geenyou@naver.com</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h2 class="partner">강병민</h2>
+            <p>geenyou@naver.com</p>
+        </div>
+        <div id="menu4" class="tab-pane fade">
+            <h2 class="partner">황서정</h2>
+            <p>geenyou@naver.com</p>
+        </div>
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip"
+                                  title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    })
+
+    //카카오맵
+    let home = {
+        wido : 37.40156159435499,
+        gyungdo : 127.11827554455563
+    }
+    let academy = {
+        wido : 37.4995602806896,
+        gyungdo : 127.02898258201785
+    }
+
+    function pointmarker(a, b){
+        var markerPosition  = new kakao.maps.LatLng(a, b);
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    }
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(home.wido, home.gyungdo), //지도의 중심좌표.
+        level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var options2 = { //지도를 생성할 때 필요한 기본 옵션
+        center: new kakao.maps.LatLng(37.4995602806896, 127.02898258201785), //지도의 중심좌표.,
+        level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    let map = new kakao.maps.Map(container, options);
+    pointmarker(home.wido,home.gyungdo);
+
+    let target = document.getElementById('mapacademy');
+    target.addEventListener('mouseover', function(){
+        map = new kakao.maps.Map(container, options2);
+        pointmarker(academy.wido,academy.gyungdo);
+    });
+
+    let target2 = document.getElementById('maphome');
+    target2.addEventListener('mouseover', function(){
+        map = new kakao.maps.Map(container, options);
+        pointmarker(home.wido,home.gyungdo);
+    });
+
+   // var map = new kakao.maps.Map(container, options);
+    //지도 생성 및 객체 리턴
+
+
+
+
+    // 마커가 표시될 위치입니다
+//    var markerPosition  = new kakao.maps.LatLng(37.40156159435499, 127.11827554455563);
+
+    // 마커를 생성합니다
+  //  var marker = new kakao.maps.Marker({
+  //      position: markerPosition
+ //   });
+    // 마커가 지도 위에 표시되도록 설정합니다
+ //   marker.setMap(map);
+
+
+
+</script>
+
+</body>
+
+</html>
