@@ -145,8 +145,9 @@ const removeTaskInStorage = (taskId, columnId) => { //
       localStorage.getItem("columns")) : [];
   const currentColumn = columns.find(column => column.id == columnId);
   const tasksFiltered = currentColumn.tasks.filter(task => task.id !== +taskId);
-  //currentColumn배열의 테스크중에 taskid와 일치히는 친구들을 찾아서 tasksFiltered
+  //currentColumn배열의 테스크중에 taskid와 일치하지 않는 친구들을 찾아서 tasksFiltered
   //에 배열로 저장합니다.
+  //>>결국 : taskid 에 해당하는 친구는 배열로 담기지 않습니다.
   currentColumn.tasks = tasksFiltered;
   //현재 column의 tasks에 tasksFiltered 배열을 담습니다.
   localStorage.setItem("columns", JSON.stringify(columns));

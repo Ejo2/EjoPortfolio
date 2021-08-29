@@ -3576,7 +3576,10 @@ body.is-preload .banner.onload-image-fade-in .image img {
             }
             
       }
-
+.geolocation #map {
+      justify-content: center;
+      align-content: center;
+      }
 .banner.style1.fullscreen {
       min-height: 100vh;
       }
