@@ -238,7 +238,7 @@ function onDraw() {
     }
 }
 function openPop() {
-    const popUrl = "tetgame.html";
+    const popUrl = "tetris.html";
     const popup = window.open(popUrl, "테트리스",
         "width=840px,height=700px,scrollbars=no,menubar=no, toolbar=no");
     
