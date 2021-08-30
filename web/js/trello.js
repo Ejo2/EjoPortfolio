@@ -115,7 +115,7 @@ columns.forEach(column => { // columns 안에 column div 객체를 하나씩 담
                 onkeyup="newTask(event,${column.id})"
                 onclick="showAddTasksMenu(event)" class="textAddTask"></textarea>
                 <div class="addDelTask">
-                    <input type="button" disabled value="Press Enter" class="buttonAddTask" onclick="newTask(event,${column.id})">
+				<input type="button" disabled value="Press Enter" class="buttonAddTask" >
                     <a href="#"><img src="cancelar.png" alt="" class="imgHideAddTask" onclick="hideAddTasksMenu(event)"></a>
 		        </div>
 	        </div>
@@ -275,10 +275,11 @@ function newColumn(event) {
                 <div class="tasks" ondragover="preventDefault(event)"  ondrop="drop(event)"></div>
                     <div class="boxAddTask">
                         <textarea placeholder="+ 내용을 입력해주세요" cols="25" rows="2"
-                        onkeydown="adjustHeightAddNewTask(event)" onkeyup="newTask(event,${columnId})" 
+                        onkeydown="adjustHeightAddNewTask(event)" 
+						onkeyup="newTask(event,${columnId})" 
                         onclick="showAddTasksMenu(event)" class="textAddTask"></textarea>
                         <div class="addDelTask">
-                            <input type="button" disabled value="Press Enter" class="buttonAddTask" onkeyup="newTask(event,${columnId})">
+                            <input type="button" disabled value="Press Enter" class="buttonAddTask" >
                             <a href="#"><img src="../img/cancelar.png" alt="" class="imgHideAddTask"></a>
                         </div>
                     </div>
