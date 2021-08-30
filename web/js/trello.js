@@ -116,7 +116,7 @@ columns.forEach(column => { // columns 안에 column div 객체를 하나씩 담
                 onclick="showAddTasksMenu(event)" class="textAddTask"></textarea>
                 <div class="addDelTask">
 				<input type="button" disabled value="Press Enter" class="buttonAddTask" >
-                    <a href="#"><img src="cancelar.png" alt="" class="imgHideAddTask" onclick="hideAddTasksMenu(event)"></a>
+                    <a href="#"><img src="img/cancelar.png" alt="" class="imgHideAddTask" onclick="hideAddTasksMenu(event)"></a>
 		        </div>
 	        </div>
         </div>`;
@@ -265,7 +265,7 @@ function newColumn(event) {
                 <div class="headColumn">
                     <h5 contenteditable onblur="changeTitleColumn(event, ${columnId})" onkeydown="preventEnter(event)" onkeyup="changeTitleColumn(event, ${columnId})"">${title}</h5>
                     <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-default" data-toggle="dropdown"><img src="puntitos.png" alt="" class="imgOptions"></button>
+                    <button type="button" class="btn btn-sm btn-default" data-toggle="dropdown"><img src="img/puntitos.png" alt="" class="imgOptions"></button>
                     <ul class="dropdown-menu" role="menu">
                     <li><a href="#" onclick="removeColumn(${columnId})">제거</a></li>
                     <li><a href="#" onclick="getFocusInTitle(${columnId})">수정</a></li>
