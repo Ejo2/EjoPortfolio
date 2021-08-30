@@ -49,21 +49,18 @@
 				magin: 0 auto;
 				
 			}
-			
-			.content{ 
-			    text-align: center;
-			    transition: all .15s ease-in-out;
-			   
-			    height: 300px;
-			    background-color: white;
-			}
-			.content > img{ 
-			    width: 24px;
-			    height: 24px;
-			    margin-top : 25%;
-			}
-			
-			
+
+            #holder{
+                text-align: center;
+                transition: all .15s ease-in-out;
+                height: 300px;
+                background-color: white;
+                margin: 0 auto;
+                background: url(assets/images/add.png) no-repeat center center;
+            }
+
+
+
         </style>
     </head>
 
@@ -401,7 +398,7 @@
                                         <div class="girid_hover_text m-top-180">
                                             <h4 class="text-white">Her</h4>
                                             <p class="text-white"></p>
-                                            <a href="assets/images/porfolio-4.jpg" class="btn btn-primary popup-img">View</a>
+                                            <a href="assets/images/movie4.jpg" class="btn btn-primary popup-img">View</a>
                                         </div>
                                     </div><!-- End off grid Hover area -->
                                 </div><!-- End off grid item -->
@@ -412,7 +409,7 @@
                                         <div class="girid_hover_text m-top-110">
                                             <h4 class="text-white">Eternal Sunshine</h4>
                                             <p class="text-white">이터널 선샤인</p>
-                                            <a href="assets/images/porfolio-5.jpg" class="btn btn-primary popup-img">View</a>
+                                            <a href="assets/images/movie3.jpg" class="btn btn-primary popup-img">View</a>
                                         </div>
                                     </div><!-- End off grid Hover area -->
                                 </div><!-- End off grid item -->
@@ -423,7 +420,7 @@
                                         <div class="girid_hover_text m-top-50">
                                             <h4 class="text-white">Han river</h4>
                                             <p class="text-white">한강</p>
-                                            <a href="assets/images/porfolio-6.jpg" class="btn btn-primary popup-img">View</a>
+                                            <a href="assets/images/place.jpg" class="btn btn-primary popup-img">View</a>
                                         </div>
                                     </div><!-- End off grid Hover area -->
                                 </div><!-- End off grid item -->
@@ -476,9 +473,13 @@
                                     <div>
                                         <div>
                                             <span>
-                                            	 <div class="content">
-                                            	 	<img src="assets/images/add.png" alt="">
-                                            	 </div>
+												<article>
+												 <div id="holder">
+
+												 </div>
+
+ 												 <p id="status"></p>
+												</article>
                                             </span>
              
                                         </div>
@@ -672,52 +673,81 @@
         <script src="assets/js/main.js"></script>
 
 
-		<!-- drag & drop -->
-		<script>
-		$('.content')
-		  .on("dragover", dragOver)
-		  .on("dragleave", dragOver)
-		  .on("drop", uploadFiles);
+        <!-- drag & drop -->
+        <script>
+            var holder = document.getElementById('holder'),
+                state = document.getElementById('status');
 
-		function dragOver(e){
-		  e.stopPropagation();
-		  e.preventDefault();
-		  if (e.type == "dragover") {
-		    $(e.target).css({
-		      "background-color": "black",
-		      "outline-offset": "-20px"
-		    });
-		  } else {
-		      $(e.target).css({
-		      "background-color": "gray",
-		      "outline-offset": "-10px"
-		    });
-		    }
-		}
+            if (typeof window.FileReader === 'undefined') {
+                state.className = 'fail';
+            } else {
+                state.className = 'success';
 
-		function uploadFiles(e) {
-		    e.stopPropagation();
-		    e.preventDefault();
-		    dragOver(e);
-		  
-		    e.dataTransfer = e.originalEvent.dataTransfer;
-		    var files = e.target.files || e.dataTransfer.files;
-		    if (files.length > 1) {
-		        alert('이미지 한개만 올려주세요.');
-		        return;
-		    }
-		    if (files[0].type.match(/image.*/)) {
-		                $(e.target).css({
-		            "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
-		            "outline": "none",
-		            "background-size": "100% 100%"
-		        });
-		    }else{
-		      alert('이미지가 아닙니다.');
-		      return;
-		    }
-		}
-		</script>
+            }
+
+            holder.ondragover = function () { this.className = 'hover'; return false; };
+            holder.ondragend = function () { this.className = ''; return false; };
+            holder.ondrop = function (e) {
+                this.className = '';
+                e.preventDefault();
+
+                var file = e.dataTransfer.files[0],
+                    reader = new FileReader();
+                reader.onload = function (event) {
+                    console.log(event.target);
+                    holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+                };
+                console.log(file);
+                reader.readAsDataURL(file);
+
+                return false;
+            };
+
+
+            $('#holder')
+                .on("dragover", dragOver)
+                .on("dragleave", dragOver)
+                .on("drop", uploadFiles);
+
+            function dragOver(e){
+                e.stopPropagation();
+                e.preventDefault();
+                if (e.type == "dragover") {
+                    $(e.target).css({
+                        "background-color": "black",
+                        "outline-offset": "-20px"
+                    });
+                } else {
+                    $(e.target).css({
+                        "background-color": "gray",
+                        "outline-offset": "-10px"
+                    });
+                }
+            }
+
+            function uploadFiles(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                dragOver(e);
+
+                e.dataTransfer = e.originalEvent.dataTransfer;
+                var files = e.target.files || e.dataTransfer.files;
+                if (files.length > 1) {
+                    alert('이미지 한개만 올려주세요.');
+                    return;
+                }
+                if (files[0].type.match(/image.*/)) {
+                    $(e.target).css({
+                        "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
+                        "outline": "none",
+                        "background-size": "100% 100%"
+                    });
+                }else{
+                    alert('이미지가 아닙니다.');
+                    return;
+                }
+            }
+        </script>
 
     </body>
 </html>
