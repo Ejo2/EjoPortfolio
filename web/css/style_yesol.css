@@ -1,34 +1,34 @@
 @font-face {
     font-family: "escoreDream7";
-    src: url("fonts/SCDream7.otf"); /*폰트 : 에스코어드림7*/
+    src: url("../fonts/SCDream7.otf"); /*폰트 : 에스코어드림7*/
 }
 @font-face {
     font-family: "escoreDream6";
-    src: url("fonts/SCDream6.otf"); /*폰트 : 에스코어드림6*/
+    src: url("../fonts/SCDream6.otf"); /*폰트 : 에스코어드림6*/
 }
 @font-face {
     font-family: "escoreDream5";
-    src: url("fonts/SCDream5.otf"); /*폰트 : 에스코어드림6*/
+    src: url("../fonts/SCDream5.otf"); /*폰트 : 에스코어드림6*/
 }
 @font-face {
     font-family: "escoreDream4";
-    src: url("fonts/SCDream4.otf"); /*폰트 : 에스코어드림4*/
+    src: url("../fonts/SCDream4.otf"); /*폰트 : 에스코어드림4*/
 }
 @font-face {
     font-family: "escoreDream3";
-    src: url("fonts/SCDream3.otf"); /*폰트 : 에스코어드림3*/
+    src: url("../fonts/SCDream3.otf"); /*폰트 : 에스코어드림3*/
 }
 @font-face {
     font-family: "escoreDream2";
-    src: url("fonts/SCDream2.otf"); /*폰트 : 에스코어드림2*/
+    src: url("../fonts/SCDream2.otf"); /*폰트 : 에스코어드림2*/
 }
 @font-face {
     font-family: "escoreDream1";
-    src: url("fonts/SCDream1.otf"); /*폰트 : 에스코어드림1*/
+    src: url("../fonts/SCDream1.otf"); /*폰트 : 에스코어드림1*/
 }
 @font-face {
     font-family: "amarillo";
-    src: url("fonts/Amarillo.otf"); /*폰트 : 아마릴로*/
+    src: url("../fonts/Amarillo.otf"); /*폰트 : 아마릴로*/
 }
 
 

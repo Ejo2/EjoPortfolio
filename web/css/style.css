@@ -1,5 +1,18 @@
 * {margin: 0;padding: 0;}
-
+/**/
+@font-face {
+      font-family: "SCDream5";
+      src: url("../fonts/SCDream5.otf");
+}
+@font-face {
+      font-family: "SCDream9";
+      src: url("../fonts/SCDream9.otf");
+}
+@font-face {
+      font-family: "SCDream3";
+      src: url("../fonts/SCDream3.otf");
+}
+/**/
 :root {
       --text-color: #f0f3f5;
       --background-color: #263343;
@@ -238,38 +251,6 @@ button:hover {
             }
 
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
