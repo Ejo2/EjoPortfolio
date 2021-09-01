@@ -56,7 +56,7 @@
             #holder {
                   text-align       : center;
                   transition       : all .15s ease-in-out;
-                  height           : 300px;
+                  height           : 400px;
                   background-color : white;
                   margin           : 0 auto;
                   background       : url(assets/images/add.png) no-repeat center center;
@@ -692,7 +692,7 @@
                reader = new FileReader();
           reader.onload = function(event) {
                console.log(event.target);
-               holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+               holder.style.background = 'url(' + event.target.result + ') no-repeat cover 100%';
           };
           console.log(file);
           reader.readAsDataURL(file);
@@ -734,7 +734,8 @@
                $(e.target).css({
                     "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
                     "outline": "none",
-                    
+                    "background-size":"100% 100%",
+          
                });
           } else {
                alert('이미지가 아닙니다.');
