@@ -6,12 +6,14 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css"/>
-      
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style_visitor.css">
+
       <title>비트캠프 2조 메인 페이지</title>
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="js/main.js" defer></script>
+      <script src="js/function.js"></script>
 </head>
 <body>
 
@@ -47,7 +49,7 @@
       <input type="radio" name="slide" id="slide02">
       <input type="radio" name="slide" id="slide03">
       <div class="slidewrap">
-            
+
             <ul class="slidelist">
                   <!-- 슬라이드 영역 -->
                   <li class="slideitem">
@@ -71,14 +73,14 @@
                   </li>
                   <li class="slideitem">
                         <a>
-                              
+
                               <div class="textbox">
                                     <h3 class="h3_tet" onclick="openPop()">테트리스</h3>
                               </div>
                               <img src="./img/slide.jpg">
                         </a>
                   </li>
-                  
+
                   <!-- 좌,우 슬라이드 버튼 -->
                   <div class="slide-control">
                         <div>
@@ -94,7 +96,7 @@
                               <label for="slide01" class="right"></label>
                         </div>
                   </div>
-            
+
             </ul>
             <!-- 페이징 -->
             <ul class="slide-pagelist">
@@ -107,48 +109,75 @@
 
 </div>
 
+<div id="flex-box">
+      <div id="flex-child1" class="flex-child">
+            <table>
+                  <tr>
+                        <td><p class="box-title">방문자수 &nbsp;</p></td>
+                        <td> <p id="visitor"></p></td>
+                  </tr>
+            </table>
+
+      </div>
+      <div id="flex-child2" class="flex-child">
+            <table>
+                  <tr>
+                        <td><p class="box-title">좋아요&nbsp;&nbsp;</p></td>
+                        <td> <div class="jb-wrap">
+                              <div class="jb-image"><img src="img/heart.png" alt="하트이미지" onclick="loverCountAdd()" style="width: 70px;cursor: pointer"></div>
+                              <div class="jb-text" onclick="loverCountAdd()" style="cursor: pointer">
+                                    <p id="lover"></p>
+
+                              </div>
+                        </div>
+                        </td>
+                  </tr>
+            </table>
+      </div>
+</div>
+
 
 </body>
 <!-- Channel Plugin Scripts -->
 <script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
-      }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "c6ed140b-1c53-4f0b-953f-271a53cee6ed"
-  });
+      (function() {
+            var w = window;
+            if (w.ChannelIO) {
+                  return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+            }
+            var ch = function() {
+                  ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+                  ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+                  if (w.ChannelIOInitialized) {
+                        return;
+                  }
+                  w.ChannelIOInitialized = true;
+                  var s = document.createElement('script');
+                  s.type = 'text/javascript';
+                  s.async = true;
+                  s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+                  s.charset = 'UTF-8';
+                  var x = document.getElementsByTagName('script')[0];
+                  x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+                  l();
+            } else if (window.attachEvent) {
+                  window.attachEvent('onload', l);
+            } else {
+                  window.addEventListener('DOMContentLoaded', l, false);
+                  window.addEventListener('load', l, false);
+            }
+      })();
+      ChannelIO('boot', {
+            "pluginKey": "c6ed140b-1c53-4f0b-953f-271a53cee6ed"
+      });
 </script>
 <!-- End Channel Plugin -->
 <script src="https://kit.fontawesome.com/17e886cad7.js" crossorigin="anonymous"></script>
@@ -156,9 +185,8 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/tet.js"></script>
-
+<script src="js/function.js"></script>
 </html>
-    
     
     
     
