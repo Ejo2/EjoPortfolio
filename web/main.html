@@ -6,12 +6,14 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css"/>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style_visitor.css">
       
       <title>비트캠프 2조 메인 페이지</title>
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="js/main.js" defer></script>
+      <script src="js/function.js"></script>
 </head>
 <body>
 
@@ -107,6 +109,32 @@
 
 </div>
 
+<div id="flex-box">
+      <div id="flex-child1" class="flex-child">
+            <table>
+                  <tr>
+                        <td><p class="box-title">방문자수 &nbsp;</p></td>
+                        <td> <p id="visitor"></p></td>
+                  </tr>
+            </table>
+
+      </div>
+      <div id="flex-child2" class="flex-child">
+            <table>
+                  <tr>
+                        <td><p class="box-title">좋아요&nbsp;&nbsp;</p></td>
+                        <td> <div class="jb-wrap">
+                              <div class="jb-image"><img src="img/heart.png" alt="하트이미지" onclick="loverCountAdd()" style="width: 70px;cursor: pointer"></div>
+                              <div class="jb-text" onclick="loverCountAdd()" style="cursor: pointer">
+                                    <p id="lover"></p>
+                              </div>
+                              </div>
+                        </td>
+                  </tr>
+            </table>
+      </div>
+</div>
+
 
 </body>
 <!-- Channel Plugin Scripts -->
@@ -156,7 +184,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/tet.js"></script>
-
+<script src="js/function.js"></script>
 </html>
     
     
