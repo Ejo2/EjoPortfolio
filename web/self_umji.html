@@ -1,477 +1,470 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>UMJI</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="assets/images/thumb.ico">
-
-        <!--Google Font link-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="assets/css/slick.css"> 
-        <link rel="stylesheet" href="assets/css/slick-theme.css">
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/iconfont.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
-
-
-
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
-
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        
-        <style>
-        	.hobby{
-				width: 128px;
-				height: 128px;
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				magin: 0 auto;
-				
-			}
-
-            #holder{
-                text-align: center;
-                transition: all .15s ease-in-out;
-                height: 300px;
-                background-color: white;
-                margin: 0 auto;
-                background: url(assets/images/add.png) no-repeat center center;
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+      <meta charset="utf-8">
+      <title>UMJI</title>
+      <meta content="" name="description">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="assets/images/thumb.ico" rel="icon" type="image/png">
+      
+      <!--Google Font link-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      
+      
+      <link href="assets/css/slick.css" rel="stylesheet">
+      <link href="assets/css/slick-theme.css" rel="stylesheet">
+      <link href="assets/css/animate.css" rel="stylesheet">
+      <link href="assets/css/iconfont.css" rel="stylesheet">
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/magnific-popup.css" rel="stylesheet">
+      <link href="assets/css/bootsnav.css" rel="stylesheet">
+      
+      
+      <!--For Plugins external css-->
+      <link href="assets/css/plugins.css" rel="stylesheet"/>
+      
+      <!--Theme custom css -->
+      <link href="assets/css/style.css" rel="stylesheet">
+      
+      <!--Theme Responsive css-->
+      <link href="assets/css/responsive.css" rel="stylesheet"/>
+      
+      <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+      
+      <style>
+            .hobby {
+                  width        : 128px;
+                  height       : 128px;
+                  display      : block;
+                  margin-left  : auto;
+                  margin-right : auto;
+                  magin        : 0 auto;
+                  
             }
+            
+            #holder {
+                  text-align       : center;
+                  transition       : all .15s ease-in-out;
+                  height           : 400px;
+                  background-color : white;
+                  margin           : 0 auto;
+                  background       : url(assets/images/add.png) no-repeat center center;
+            }
+      
+      
+      </style>
+</head>
+
+<body data-offset="100" data-spy="scroll" data-target=".navbar-collapse">
 
 
-
-        </style>
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
-
-
-        <!-- Preloader -->
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
+<!-- Preloader -->
+<div id="loading">
+      <div id="loading-center">
+            <div id="loading-center-absolute">
+                  <div class="object" id="object_one"></div>
+                  <div class="object" id="object_two"></div>
+                  <div class="object" id="object_three"></div>
+                  <div class="object" id="object_four"></div>
             </div>
-        </div><!--End off Preloader -->
+      </div>
+</div><!--End off Preloader -->
 
 
-        <div class="culmn">
-            <!--Home page style-->
-
-
-            <nav class="navbar navbar-default bootsnav navbar-fixed no-background white">
-
-                <!-- Start Top Search -->
-                <div class="top-search">
-                    <div class="container">
+<div class="culmn">
+      <!--Home page style-->
+      
+      
+      <nav class="navbar navbar-default bootsnav navbar-fixed no-background white">
+            
+            <!-- Start Top Search -->
+            <div class="top-search">
+                  <div class="container">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                              <input class="form-control" placeholder="Search" type="text">
+                              <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
                         </div>
-                    </div>
-                </div>
-                <!-- End Top Search -->
-
-
-                <div class="container"> 
-                    <div class="attr-nav">
+                  </div>
+            </div>
+            <!-- End Top Search -->
+            
+            
+            <div class="container">
+                  <div class="attr-nav">
                         <ul>
-                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                              <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
                         </ul>
-                    </div> 
-
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
+                  </div>
+                  
+                  <!-- Start Header Navigation -->
+                  <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#navbar-menu" data-toggle="collapse" type="button">
+                              <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="#brand">
-                            <img src="assets/images/logo.png" class="logo" alt="">
-                            <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                              <img alt="" class="logo" src="assets/images/logo.png">
+                              <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
                         </a>
-
-                    </div>
-                    <!-- End Header Navigation -->
-
-                    <!-- navbar menu -->
-                    <div class="collapse navbar-collapse" id="navbar-menu">
+                  
+                  </div>
+                  <!-- End Header Navigation -->
+                  
+                  <!-- navbar menu -->
+                  <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>                    
-                            <li><a href="#features">Learn</a></li>
-                            <li><a href="#service">Hobby</a></li>
-                            <li><a href="#portfolio">Favorite</a></li>
-                            <li><a href="#test">Drag&Drop</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                              <li><a href="#home">Home</a></li>
+                              <li><a href="#features">Learn</a></li>
+                              <li><a href="#service">Hobby</a></li>
+                              <li><a href="#portfolio">Favorite</a></li>
+                              <li><a href="#test">Drag&Drop</a></li>
+                              <li><a href="#contact">Contact</a></li>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div> 
-
-            </nav>
-
-            <!--Home Sections-->
-
-            <section id="home" class="home bg-black fix">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
+                  </div><!-- /.navbar-collapse -->
+            </div>
+      
+      </nav>
+      
+      <!--Home Sections-->
+      
+      <section class="home bg-black fix" id="home">
+            <div class="overlay"></div>
+            <div class="container">
+                  <div class="row">
                         <div class="main_home text-center">
-                            <div class="col-md-12">
-                                <div class="hello">
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h1 class="text-yellow">Welcome to My page</h1>
-                                            <h3 class="text-white text-uppercase">My name is umji</h3>
-                                        </div>
-                                    </div><!-- End off slid item -->
-
-                                </div>
-                            </div>
-
+                              <div class="col-md-12">
+                                    <div class="hello">
+                                          <div class="slid_item">
+                                                <div class="home_text ">
+                                                      <h1 class="text-yellow">Welcome to My page</h1>
+                                                      <h3 class="text-white text-uppercase">My name is umji</h3>
+                                                </div>
+                                          </div><!-- End off slid item -->
+                                    
+                                    </div>
+                              </div>
+                        
                         </div>
-
-
+                        
+                        
                         <a class="mouse-scroll" href="#about"> 
                             <span class="mouse">
                                 <span class="mouse-movement"></span>
                             </span>
-                            <span class="mouse-message fadeIn">Explore</span> <br />
-                            <!--<i class="fa fa-angle-down m-top-10 fadeIn mouse-message"></i>--> 
+                              <span class="mouse-message fadeIn">Explore</span> <br/>
+                              <!--<i class="fa fa-angle-down m-top-10 fadeIn mouse-message"></i>-->
                         </a>
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-            <!--About Section-->
-            <section id="about" class="about bg-yellow roomy-80">
-                <div class="container">
-                    <div class="row">
+                  
+                  </div><!--End off row-->
+            </div><!--End off container -->
+      </section> <!--End off Home Sections-->
+      
+      
+      <!--About Section-->
+      <section class="about bg-yellow roomy-80" id="about">
+            <div class="container">
+                  <div class="row">
                         <div class="col-sm-12">
-                            <div class="main_about text-center">
-                                <h1 class="text-black">I want to become a full-stack developer</h1>
-                                <h2 class="text-white">- & -</h2>
-                                <h3 class="text-black text-uppercase">풀스택 개발자가 되기 위해<br>프론트엔드와 백엔드 공부 중입니다</h3>
-
-                                <a href="" class="btn btn-primary m-top-100">More</a>
-                            </div>
+                              <div class="main_about text-center">
+                                    <h1 class="text-black">I want to become a full-stack developer</h1>
+                                    <h2 class="text-white">- & -</h2>
+                                    <h3 class="text-black text-uppercase">풀스택 개발자가 되기 위해<br>프론트엔드와 백엔드 공부 중입니다</h3>
+                                    
+                                    <a class="btn btn-primary m-top-100" href="">More</a>
+                              </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <!--Featured Section-->
-            <section id="features" class="features bg-white">
-                <div class="container">
-                    <div class="row">
+                  </div>
+            </div>
+      </section>
+      
+      
+      <!--Featured Section-->
+      <section class="features bg-white" id="features">
+            <div class="container">
+                  <div class="row">
                         <div class="main_features fix roomy-70">
-
-                            <div class="col-md-5">
-                                <div class="features_item">
-                                    <div class="head_title">
-                                        <h2 class="text-uppercase">Learn <strong>to</strong></h2>
+                              
+                              <div class="col-md-5">
+                                    <div class="features_item">
+                                          <div class="head_title">
+                                                <h2 class="text-uppercase">Learn <strong>to</strong></h2>
+                                          </div>
+                                          <div class="featured_content">
+                                                <p>지금까지 JAVA, DataBase, Html, Css, JavaScript 를 배우고 있으며
+                                                      부족하지만 열심히 노력중 입니다</p>
+                                                
+                                                <a class="btn btn-default m-top-40" href="">More</a>
+                                          </div>
                                     </div>
-                                    <div class="featured_content">
-                                        <p>지금까지 JAVA, DataBase, Html, Css, JavaScript 를 배우고 있으며 
-										부족하지만 열심히 노력중 입니다</p>
-
-                                        <a href="" class="btn btn-default m-top-40">More</a>
+                              </div>
+                              
+                              <div class="col-md-6 col-md-offset-1 sm-m-top-50">
+                                    <div class="features_item2_area">
+                                          <div class="features_item2 text-center">
+                                                <div class="divider_horizontal"></div>
+                                                <div class="divider_vertical"></div>
+                                                <div class="col-xs-6">
+                                                      <div class="features_item_text">
+                                                            <img alt="" class="img-circle" src="assets/images/java.png"/>
+                                                            <p class="m-top-20">JAVA</p>
+                                                      </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                      <div class="features_item_text">
+                                                            <img alt="" src="assets/images/db.png"/>
+                                                            <p class="m-top-20">DataBase</p>
+                                                      </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                      <div class="features_item_text m-top-50">
+                                                            <img alt="" src="assets/images/html&css.png"/>
+                                                            <p class="m-top-20">HTML & CSS</p>
+                                                      </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                      <div class="features_item_text m-top-50">
+                                                            <img alt="" class="img-circle" src="assets/images/javascript.png"/>
+                                                            <p class="m-top-20">Java script</p>
+                                                      </div>
+                                                </div>
+                                          
+                                          </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-md-offset-1 sm-m-top-50">
-                                <div class="features_item2_area">
-                                    <div class="features_item2 text-center">
-                                        <div class="divider_horizontal"></div>
-                                        <div class="divider_vertical"></div>
-                                        <div class="col-xs-6">
-                                            <div class="features_item_text">
-                                                <img src="assets/images/java.png" alt="" class="img-circle" />
-                                                <p class="m-top-20">JAVA</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <div class="features_item_text">
-                                                <img src="assets/images/db.png" alt="" />
-                                                <p class="m-top-20">DataBase</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <div class="features_item_text m-top-50">
-                                                <img src="assets/images/html&css.png" alt="" />
-                                                <p class="m-top-20">HTML & CSS</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <div class="features_item_text m-top-50">
-                                                <img src="assets/images/javascript.png" alt="" class="img-circle" />
-                                                <p class="m-top-20">Java script</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                              </div>
                         </div>
-                    </div><!-- End off row -->
-                    
-                    <div class="col-md-12">
-				<div class="skill">
-					<div class="team_content_details_skills m-top-10">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="20%">
-									<label>JAVA</label>
-									<div class="teamskillbar-bar" style="width: 0%;"></div>
-								</div> <!-- End Skill Bar -->
-
-								<div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="40%">
-									<label>DataBase</label>
-									<div class="teamskillbar-bar" style="width: 0%;"></div>
-								</div> <!-- End Skill Bar -->
-							</div>
-
-							<div class="col-sm-6">
-								<div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="60%">
-									<label>HTML & CSS</label>
-									<div class="teamskillbar-bar" style="width: 0%;"></div>
-								</div> <!-- End Skill Bar -->
-
-								<div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="20%">
-									<label>Java script</label>
-									<div class="teamskillbar-bar" style="width: 0%;"></div>
-								</div> <!-- End Skill Bar -->
-							</div>
-
-						</div>
-					</div>
-				</div><!-- End off skill -->
-			</div><!-- End col-md-12 -->
-                    
-                </div><!-- End off container -->
-            </section><!-- End off Featured Section-->
-			
-			
-
-
-            <!--Business Section-->
-            <section id="service" class="service bg-grey roomy-70 m-top-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_service">
-                            <div class="col-md-6">
-                                <div class="service_slid">
-                                    <div class="slid_shap bg-yellow"></div>
-                                    <div class="service_slid_item text-center">
-                                        <div class="service_slid_text">
-                                            <span class="icon icon text-black">
-                                            	 <img class="hobby" alt="" src="assets/images/cafe.jpg">
-                                            </span>
-                                            <h5 class="text-black m-top-20">CAFE 투어</h5>
-                                        </div>
-                                        <div class="service_slid_text">
-                                            <span class="icon icon text-black">
-                                            	 <img class="hobby" alt="" src="assets/images/net.jpeg">
-                                            </span>
-                                            <h5 class="text-black m-top-20">넷플릭스 보기</h5>
-                                        </div>
+                  </div><!-- End off row -->
+                  
+                  <div class="col-md-12">
+                        <div class="skill">
+                              <div class="team_content_details_skills m-top-10">
+                                    <div class="row">
+                                          <div class="col-sm-6">
+                                                <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="20%">
+                                                      <label>JAVA</label>
+                                                      <div class="teamskillbar-bar" style="width: 0%;"></div>
+                                                </div> <!-- End Skill Bar -->
+                                                
+                                                <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="40%">
+                                                      <label>DataBase</label>
+                                                      <div class="teamskillbar-bar" style="width: 0%;"></div>
+                                                </div> <!-- End Skill Bar -->
+                                          </div>
+                                          
+                                          <div class="col-sm-6">
+                                                <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="60%">
+                                                      <label>HTML & CSS</label>
+                                                      <div class="teamskillbar-bar" style="width: 0%;"></div>
+                                                </div> <!-- End Skill Bar -->
+                                                
+                                                <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="20%">
+                                                      <label>Java script</label>
+                                                      <div class="teamskillbar-bar" style="width: 0%;"></div>
+                                                </div> <!-- End Skill Bar -->
+                                          </div>
+                                    
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1">
-                                <div class="service_item sm-m-top-50">
-                                    <div class="head_title">
-                                        <h2 class="text-uppercase">My <strong>Hobby</strong></h2>
-                                    </div>
-                                    <div class="service_content">
-                                        <p>커피는 못 마시지만 디저트를 좋아해서 시간 되면 카페 투어 하고 집에서 넷플릭스 보는 걸 좋아합니다.</p>
-
-                                        <a href="" class="btn btn-default m-top-40">More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!-- End off Business section -->
-
+                              </div>
+                        </div><!-- End off skill -->
+                  </div><!-- End col-md-12 -->
             
-
-            <!--Portfolio Section-->
-            <section id="portfolio" class="portfolio margin-top-120">
-
-                <!-- Portfolio container-->
-                <div class="container">
-                    <div class="row">
-                        <div class="main-portfolio roomy-80">
-
-                            <div class="col-md-4">
-                                <div class="head_title text-left sm-text-center wow fadeInDown">
-                                    <h2>My <strong>Favorite</strong></h2>
-                                </div>
-                            </div>
-
-                            <div class="col-md-8">
-                                <div class="filters-button-group text-right sm-text-center">
-                                    <button class="btn button is-checked" data-filter="*">all</button>
-                                    <button class="btn button" data-filter=".metal">Movie</button>
-                                    <button class="btn button" data-filter=".transition">Music</button>
-                                    <button class="btn button" data-filter=".alkali">Place</button>
-                                    <button class="btn button" data-filter=".ar">Food</button>
-                                </div>
-                            </div>
-
-
-
-                            <div style="clear: both;"></div>
-
-                            <div class="grid text-center">
-
-                                <div class="grid-item metal ium">
-                                    <img alt="" src="assets/images/movie1.png">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-110">
-                                            <h4 class="text-white">Grand Budapest Hotel</h4>
-                                            <p class="text-white">그랜드 부다페스트 호텔</p>
-                                            <a href="assets/images/movie1.png" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item transition metalloid " >
-                                    <img alt="" src="assets/images/stay.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-180">
-                                            <h4 class="text-white">The Kid LAROI, Justin Bieber</h4>
-                                            <p class="text-white">STAY</p>
-                                            <a>
-                                            <iframe width="300" height="209" src="https://www.youtube.com/embed/kTJczUoc26U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item post-transition metal numberGreaterThan50">
-                                    <img alt="" src="assets/images/movie2.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-50">
-                                            <h4 class="text-white">About Time</h4>
-                                            <p class="text-white">어바웃 타임</p>
-                                            <a href="assets/images/movie2.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item post-transition metal ium" >
-                                    <img alt="" src="assets/images/movie4.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-180">
-                                            <h4 class="text-white">Her</h4>
-                                            <p class="text-white"></p>
-                                            <a href="assets/images/movie4.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item metal" >
-                                    <img alt="" src="assets/images/movie3.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-110">
-                                            <h4 class="text-white">Eternal Sunshine</h4>
-                                            <p class="text-white">이터널 선샤인</p>
-                                            <a href="assets/images/movie3.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-
-                                <div class="grid-item alkali" >
-                                    <img alt="" src="assets/images/place.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-50">
-                                            <h4 class="text-white">Han river</h4>
-                                            <p class="text-white">한강</p>
-                                            <a href="assets/images/place.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-                                
-                                <div class="grid-item ar" >
-                                    <img alt="" src="assets/images/cake.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-110">
-                                            <h4 class="text-white">Cake</h4>
-                                            <p class="text-white">케이크</p>
-                                            <a href="assets/images/cake.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-                                
-                                 <div class="grid-item ar" >
-                                    <img alt="" src="assets/images/bread.jpg">
-                                    <div class="grid_hover_area text-center">
-                                        <div class="girid_hover_text m-top-110">
-                                            <h4 class="text-white">Bread</h4>
-                                            <p class="text-white">빵</p>
-                                            <a href="assets/images/bread.jpg" class="btn btn-primary popup-img">View</a>
-                                        </div>
-                                    </div><!-- End off grid Hover area -->
-                                </div><!-- End off grid item -->
-                                
-                               
-
-                            </div>
-
-
-
-                            <div style="clear: both;"></div>
-
-
-                        </div>
-                    </div>
-                </div><!-- Portfolio container end -->
-            </section><!-- End off portfolio section -->
-
-
-
-            <section id="test" class="service bg-grey roomy-70 m-top-50">
-                <div class="container">
-                    <div class="row">
+            </div><!-- End off container -->
+      </section><!-- End off Featured Section-->
+      
+      
+      <!--Business Section-->
+      <section class="service bg-grey roomy-70 m-top-50" id="service">
+            <div class="container">
+                  <div class="row">
                         <div class="main_service">
-                            <div class="col-md-6">
-                                <div class="service_slid">
-                                    <div class="slid_shap bg-yellow"></div>
-                                    <div>
-                                        <div>
+                              <div class="col-md-6">
+                                    <div class="service_slid">
+                                          <div class="slid_shap bg-yellow"></div>
+                                          <div class="service_slid_item text-center">
+                                                <div class="service_slid_text">
+                                            <span class="icon icon text-black">
+                                            	 <img alt="" class="hobby" src="assets/images/cafe.jpg">
+                                            </span>
+                                                      <h5 class="text-black m-top-20">CAFE 투어</h5>
+                                                </div>
+                                                <div class="service_slid_text">
+                                            <span class="icon icon text-black">
+                                            	 <img alt="" class="hobby" src="assets/images/net.jpeg">
+                                            </span>
+                                                      <h5 class="text-black m-top-20">넷플릭스 보기</h5>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-5 col-md-offset-1">
+                                    <div class="service_item sm-m-top-50">
+                                          <div class="head_title">
+                                                <h2 class="text-uppercase">My <strong>Hobby</strong></h2>
+                                          </div>
+                                          <div class="service_content">
+                                                <p>커피는 못 마시지만 디저트를 좋아해서 시간 되면 카페 투어 하고 집에서 넷플릭스 보는 걸 좋아합니다.</p>
+                                                
+                                                <a class="btn btn-default m-top-40" href="">More</a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section><!-- End off Business section -->
+      
+      
+      <!--Portfolio Section-->
+      <section class="portfolio margin-top-120" id="portfolio">
+            
+            <!-- Portfolio container-->
+            <div class="container">
+                  <div class="row">
+                        <div class="main-portfolio roomy-80">
+                              
+                              <div class="col-md-4">
+                                    <div class="head_title text-left sm-text-center wow fadeInDown">
+                                          <h2>My <strong>Favorite</strong></h2>
+                                    </div>
+                              </div>
+                              
+                              <div class="col-md-8">
+                                    <div class="filters-button-group text-right sm-text-center">
+                                          <button class="btn button is-checked" data-filter="*">all</button>
+                                          <button class="btn button" data-filter=".metal">Movie</button>
+                                          <button class="btn button" data-filter=".transition">Music</button>
+                                          <button class="btn button" data-filter=".alkali">Place</button>
+                                          <button class="btn button" data-filter=".ar">Food</button>
+                                    </div>
+                              </div>
+                              
+                              
+                              <div style="clear: both;"></div>
+                              
+                              <div class="grid text-center">
+                                    
+                                    <div class="grid-item metal ium">
+                                          <img alt="" src="assets/images/movie1.png">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-110">
+                                                      <h4 class="text-white">Grand Budapest Hotel</h4>
+                                                      <p class="text-white">그랜드 부다페스트 호텔</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/movie1.png">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item transition metalloid ">
+                                          <img alt="" src="assets/images/stay.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-180">
+                                                      <h4 class="text-white">The Kid LAROI, Justin Bieber</h4>
+                                                      <p class="text-white">STAY</p>
+                                                      <a>
+                                                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="209" src="https://www.youtube.com/embed/kTJczUoc26U" title="YouTube video player" width="300"></iframe>
+                                                      </a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item post-transition metal numberGreaterThan50">
+                                          <img alt="" src="assets/images/movie2.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-50">
+                                                      <h4 class="text-white">About Time</h4>
+                                                      <p class="text-white">어바웃 타임</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/movie2.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item post-transition metal ium">
+                                          <img alt="" src="assets/images/movie4.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-180">
+                                                      <h4 class="text-white">Her</h4>
+                                                      <p class="text-white"></p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/movie4.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item metal">
+                                          <img alt="" src="assets/images/movie3.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-110">
+                                                      <h4 class="text-white">Eternal Sunshine</h4>
+                                                      <p class="text-white">이터널 선샤인</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/movie3.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item alkali">
+                                          <img alt="" src="assets/images/place.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-50">
+                                                      <h4 class="text-white">Han river</h4>
+                                                      <p class="text-white">한강</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/place.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item ar">
+                                          <img alt="" src="assets/images/cake.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-110">
+                                                      <h4 class="text-white">Cake</h4>
+                                                      <p class="text-white">케이크</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/cake.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                                    
+                                    <div class="grid-item ar">
+                                          <img alt="" src="assets/images/bread.jpg">
+                                          <div class="grid_hover_area text-center">
+                                                <div class="girid_hover_text m-top-110">
+                                                      <h4 class="text-white">Bread</h4>
+                                                      <p class="text-white">빵</p>
+                                                      <a class="btn btn-primary popup-img" href="assets/images/bread.jpg">View</a>
+                                                </div>
+                                          </div><!-- End off grid Hover area -->
+                                    </div><!-- End off grid item -->
+                              
+                              
+                              </div>
+                              
+                              
+                              <div style="clear: both;"></div>
+                        
+                        
+                        </div>
+                  </div>
+            </div><!-- Portfolio container end -->
+      </section><!-- End off portfolio section -->
+      
+      
+      <section class="service bg-grey roomy-70 m-top-50" id="test">
+            <div class="container">
+                  <div class="row">
+                        <div class="main_service">
+                              <div class="col-md-6">
+                                    <div class="service_slid">
+                                          <div class="slid_shap bg-yellow"></div>
+                                          <div>
+                                                <div>
                                             <span>
 												<article>
 												 <div id="holder">
@@ -481,273 +474,275 @@
  												 <p id="status"></p>
 												</article>
                                             </span>
-             
-                                        </div>
+                                                
+                                                </div>
+                                          </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-offset-1">
-                                <div class="service_item sm-m-top-50">
-                                    <div class="head_title">
-                                        <h2 class="text-uppercase">Drag & Drop</h2>
+                              </div>
+                              <div class="col-md-5 col-md-offset-1">
+                                    <div class="service_item sm-m-top-50">
+                                          <div class="head_title">
+                                                <h2 class="text-uppercase">Drag & Drop</h2>
+                                          </div>
+                                          <div class="service_content">
+                                                <p>drag and drop your image!</p>
+                                                <p>이미지 파일을 올려 보세요.</p>
+                                          
+                                          </div>
                                     </div>
-                                    <div class="service_content">
-                                        <p>drag and drop your image!</p>
-										<p>이미지 파일을 올려 보세요.</p>
-                                       
-                                    </div>
-                                </div>
-                            </div>
+                              </div>
                         </div>
-                    </div>
-                </div>
-            </section><!-- End off Business section -->
-
-
-
-            <footer id="contact" class="footer action-lage bg-black p-top-80">
-                <!--<div class="action-lage"></div>-->
-                <div class="container">
-                    <div class="row">
+                  </div>
+            </div>
+      </section><!-- End off Business section -->
+      
+      
+      <footer class="footer action-lage bg-black p-top-80" id="contact">
+            <!--<div class="action-lage"></div>-->
+            <div class="container">
+                  <div class="row">
                         <div class="widget_area">
-                           
-                            <div class="col-md-3">
-                                <div class="widget_item widget_newsletter sm-m-top-50">
-                                    <h5 class="text-white">Newsletter</h5>
-                                    <form class="form-inline m-top-30">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Enter you Email">
-                                            <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
-                                        </div>
-
-                                    </form>
-                                    <div class="widget_brand m-top-40">
-                                        <a href="" class="text-uppercase">Contact</a>
-                                        <p></p>
-                                    </div>
-                                    <ul class="list-inline m-top-20">
-                                        <li>-  <a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a href=""><i class="fa fa-behance"></i></a></li>
-                                        <li><a href=""><i class="fa fa-dribbble"></i></a>  - </li>
-                                    </ul>
-
-                                </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
-                            
-                             <div class="col-md-3">
-                                <div class="widget_item widget_about">
-                                    <h5 class="text-white">About Me</h5>
-                                    <p class="m-top-30">My info</p>
-                                    <div class="widget_ab_item m-top-30">
-                                        <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
-                                        <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Location</h6>
-                                            <p>
-                                                서울시 강남구 신사동</p>
-                                        </div>
-                                    </div>
-                                    <div class="widget_ab_item m-top-30">
-                                        <div class="item_icon"><i class="fa fa-phone"></i></div>
-                                        <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Phone :</h6>
-                                            <p>010 2215 0274</p>
-                                        </div>
-                                    </div>
-                                    <div class="widget_ab_item m-top-30">
-                                        <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
-                                        <div class="widget_ab_item_text">
-                                            <h6 class="text-white">Email Address :</h6>
-                                            <p>one_thumbup@naver.com</p>
-                                        </div>
-                                    </div>
-                                </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
-                            
-                            
-                            <div class="col-md-3">
-                                <div class="widget_item widget_service sm-m-top-50">
-                                    <!-- 카카오맵  -->
-                                    <div id="map" style="width:550px;height:400px;"></div>
-                                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=859297ee50fc0e478e933f7c7b67af95"></script>
-                                    <script>
-                                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-                                            mapOption = {
-                                                center: new kakao.maps.LatLng(37.52157, 127.02283), // 지도의 중심좌표
-                                                level: 3 // 지도의 확대 레벨
-                                            };
-
-                                        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-                                        // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
-                                        if (navigator.geolocation) {
-
-                                            // GeoLocation을 이용해서 접속 위치를 얻어옵니다
-                                            navigator.geolocation.getCurrentPosition(function(position) {
-
-                                                var lat = position.coords.latitude, // 위도
-                                                    lon = position.coords.longitude; // 경도
-
-                                                var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-                                                    message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
-
-                                                // 마커와 인포윈도우를 표시합니다
-                                                displayMarker(locPosition, message);
-
-                                            });
-
-                                        } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
-
-                                            var locPosition = new kakao.maps.LatLng(37.52157, 127.02283),
-                                                message = 'geolocation을 사용할수 없어요..'
-
-                                            displayMarker(locPosition, message);
-                                        }
-
-                                        // 지도에 마커와 인포윈도우를 표시하는 함수입니다
-                                        function displayMarker(locPosition, message) {
-
-
-                                            // 마커를 생성합니다
-                                            var marker = new kakao.maps.Marker({
-                                                map: map,
-                                                position: locPosition
-                                            });
-
-                                            var iwContent = message, // 인포윈도우에 표시할 내용
-                                                iwRemoveable = true;
-
-                                            // 인포윈도우를 생성합니다
-                                            var infowindow = new kakao.maps.InfoWindow({
-                                                content : iwContent,
-                                                removable : iwRemoveable
-                                            });
-
-                                            // 인포윈도우를 마커위에 표시합니다
-                                            infowindow.open(map, marker);
-
-                                            // 지도 중심좌표를 접속위치로 변경합니다
-                                            map.setCenter(locPosition);
-                                        }
-                                    </script>
-										
-										
-                                </div><!-- End off widget item -->
-                            </div><!-- End off col-md-3 -->
+                              
+                              <div class="col-md-3">
+                                    <div class="widget_item widget_newsletter sm-m-top-50">
+                                          <h5 class="text-white">Newsletter</h5>
+                                          <form class="form-inline m-top-30">
+                                                <div class="form-group">
+                                                      <input class="form-control" placeholder="Enter you Email" type="email">
+                                                      <button class="btn text-center" type="submit">
+                                                            <i class="fa fa-arrow-right"></i></button>
+                                                </div>
+                                          
+                                          </form>
+                                          <div class="widget_brand m-top-40">
+                                                <a class="text-uppercase" href="">Contact</a>
+                                                <p></p>
+                                          </div>
+                                          <ul class="list-inline m-top-20">
+                                                <li>- <a href=""><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href=""><i class="fa fa-behance"></i></a></li>
+                                                <li><a href=""><i class="fa fa-dribbble"></i></a> -</li>
+                                          </ul>
+                                    
+                                    </div><!-- End off widget item -->
+                              </div><!-- End off col-md-3 -->
+                              
+                              <div class="col-md-3">
+                                    <div class="widget_item widget_about">
+                                          <h5 class="text-white">About Me</h5>
+                                          <p class="m-top-30">My info</p>
+                                          <div class="widget_ab_item m-top-30">
+                                                <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                                                <div class="widget_ab_item_text">
+                                                      <h6 class="text-white">Location</h6>
+                                                      <p>
+                                                            서울시 강남구 신사동</p>
+                                                </div>
+                                          </div>
+                                          <div class="widget_ab_item m-top-30">
+                                                <div class="item_icon"><i class="fa fa-phone"></i></div>
+                                                <div class="widget_ab_item_text">
+                                                      <h6 class="text-white">Phone :</h6>
+                                                      <p>010 2215 0274</p>
+                                                </div>
+                                          </div>
+                                          <div class="widget_ab_item m-top-30">
+                                                <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                                                <div class="widget_ab_item_text">
+                                                      <h6 class="text-white">Email Address :</h6>
+                                                      <p>one_thumbup@naver.com</p>
+                                                </div>
+                                          </div>
+                                    </div><!-- End off widget item -->
+                              </div><!-- End off col-md-3 -->
+                              
+                              
+                              <div class="col-md-3">
+                                    <div class="widget_item widget_service sm-m-top-50">
+                                          <!-- 카카오맵  -->
+                                          <div id="map" style="width:550px;height:400px;"></div>
+                                          <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6ce319634eee8d2d2756b025582042a4" type="text/javascript"></script>
+                                          <script>
+                                               var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                                                    mapOption = {
+                                                         center: new kakao.maps.LatLng(37.52157, 127.02283), // 지도의 중심좌표
+                                                         level: 3, // 지도의 확대 레벨
+                                                    };
+                                               
+                                               var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                                               
+                                               // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
+                                               if (navigator.geolocation) {
+                                                    
+                                                    // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+                                                    navigator.geolocation.getCurrentPosition(function(position) {
+                                                         
+                                                         var lat = position.coords.latitude, // 위도
+                                                              lon = position.coords.longitude; // 경도
+                                                         
+                                                         var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                                                              message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+                                                         
+                                                         // 마커와 인포윈도우를 표시합니다
+                                                         displayMarker(locPosition, message);
+                                                         
+                                                    });
+                                                    
+                                               } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+                                                    
+                                                    var locPosition = new kakao.maps.LatLng(37.52157, 127.02283),
+                                                         message = 'geolocation을 사용할수 없어요..';
+                                                    
+                                                    displayMarker(locPosition, message);
+                                               }
+                                               
+                                               // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+                                               function displayMarker(locPosition, message) {
+                                                    
+                                                    
+                                                    // 마커를 생성합니다
+                                                    var marker = new kakao.maps.Marker({
+                                                         map: map,
+                                                         position: locPosition,
+                                                    });
+                                                    
+                                                    var iwContent = message, // 인포윈도우에 표시할 내용
+                                                         iwRemoveable = true;
+                                                    
+                                                    // 인포윈도우를 생성합니다
+                                                    var infowindow = new kakao.maps.InfoWindow({
+                                                         content: iwContent,
+                                                         removable: iwRemoveable,
+                                                    });
+                                                    
+                                                    // 인포윈도우를 마커위에 표시합니다
+                                                    infowindow.open(map, marker);
+                                                    
+                                                    // 지도 중심좌표를 접속위치로 변경합니다
+                                                    map.setCenter(locPosition);
+                                               }
+                                          </script>
+                                    
+                                    
+                                    </div><!-- End off widget item -->
+                              </div><!-- End off col-md-3 -->
                         </div>
-                    </div>
-                </div>
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
-                    <div class="col-md-12">
+                  </div>
+            </div>
+            <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                  <div class="col-md-12">
                         <p class="wow fadeInRight" data-wow-duration="1s">
-                            2021. All Rights Reserved
+                              2021. All Rights Reserved
                         </p>
-                    </div>
-                </div>
-            </footer>
+                  </div>
+            </div>
+      </footer>
 
 
+</div>
+
+<!-- JS includes -->
+
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<!--<script src="assets/js/jquery.easypiechart.min.js"></script>-->
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<!--<script src="assets/js/slick.js"></script>-->
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/js.isotope.js"></script>
+<script src="assets/js/jquery.collapse.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
 
 
-        </div>
+<!-- drag & drop -->
+<script>
+     var holder = document.getElementById('holder'),
+          state = document.getElementById('status');
+     
+     if (typeof window.FileReader === 'undefined') {
+          state.className = 'fail';
+     } else {
+          state.className = 'success';
+          
+     }
+     
+     holder.ondragover = function() {
+          this.className = 'hover';
+          return false;
+     };
+     holder.ondragend = function() {
+          this.className = '';
+          return false;
+     };
+     holder.ondrop = function(e) {
+          this.className = '';
+          e.preventDefault();
+          
+          var file = e.dataTransfer.files[0],
+               reader = new FileReader();
+          reader.onload = function(event) {
+               console.log(event.target);
+               holder.style.background = 'url(' + event.target.result + ') no-repeat cover 100%';
+          };
+          console.log(file);
+          reader.readAsDataURL(file);
+          
+          return false;
+     };
+     
+     
+     $('#holder').on("dragover", dragOver).on("dragleave", dragOver).on("drop", uploadFiles);
+     
+     function dragOver(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          if (e.type == "dragover") {
+               $(e.target).css({
+                    "background-color": "black",
+                    "outline-offset": "-20px",
+               });
+          } else {
+               $(e.target).css({
+                    "background-color": "gray",
+                    "outline-offset": "-10px",
+               });
+          }
+     }
+     
+     function uploadFiles(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          dragOver(e);
+          
+          e.dataTransfer = e.originalEvent.dataTransfer;
+          var files = e.target.files || e.dataTransfer.files;
+          if (files.length > 1) {
+               alert('이미지 한개만 올려주세요.');
+               return;
+          }
+          if (files[0].type.match(/image.*/)) {
+               $(e.target).css({
+                    "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
+                    "outline": "none",
+                    "background-size":"100% 100%",
+          
+               });
+          } else {
+               alert('이미지가 아닙니다.');
+               return;
+          }
+     }
+</script>
 
-        <!-- JS includes -->
-
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="assets/js/jquery.magnific-popup.js"></script>
-        <!--<script src="assets/js/jquery.easypiechart.min.js"></script>-->
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <!--<script src="assets/js/slick.js"></script>-->
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/js.isotope.js"></script>
-        <script src="assets/js/jquery.collapse.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
-
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-
-
-        <!-- drag & drop -->
-        <script>
-            var holder = document.getElementById('holder'),
-                state = document.getElementById('status');
-
-            if (typeof window.FileReader === 'undefined') {
-                state.className = 'fail';
-            } else {
-                state.className = 'success';
-
-            }
-
-            holder.ondragover = function () { this.className = 'hover'; return false; };
-            holder.ondragend = function () { this.className = ''; return false; };
-            holder.ondrop = function (e) {
-                this.className = '';
-                e.preventDefault();
-
-                var file = e.dataTransfer.files[0],
-                    reader = new FileReader();
-                reader.onload = function (event) {
-                    console.log(event.target);
-                    holder.style.background = 'url(' + event.target.result + ') no-repeat center';
-                };
-                console.log(file);
-                reader.readAsDataURL(file);
-
-                return false;
-            };
-
-
-            $('#holder')
-                .on("dragover", dragOver)
-                .on("dragleave", dragOver)
-                .on("drop", uploadFiles);
-
-            function dragOver(e){
-                e.stopPropagation();
-                e.preventDefault();
-                if (e.type == "dragover") {
-                    $(e.target).css({
-                        "background-color": "black",
-                        "outline-offset": "-20px"
-                    });
-                } else {
-                    $(e.target).css({
-                        "background-color": "gray",
-                        "outline-offset": "-10px"
-                    });
-                }
-            }
-
-            function uploadFiles(e) {
-                e.stopPropagation();
-                e.preventDefault();
-                dragOver(e);
-
-                e.dataTransfer = e.originalEvent.dataTransfer;
-                var files = e.target.files || e.dataTransfer.files;
-                if (files.length > 1) {
-                    alert('이미지 한개만 올려주세요.');
-                    return;
-                }
-                if (files[0].type.match(/image.*/)) {
-                    $(e.target).css({
-                        "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
-                        "outline": "none",
-                        "background-size": "100% 100%"
-                    });
-                }else{
-                    alert('이미지가 아닙니다.');
-                    return;
-                }
-            }
-        </script>
-
-    </body>
+</body>
 </html>
