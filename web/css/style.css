@@ -95,6 +95,18 @@ a {
       color: blue;
 
       }
+button.geo{
+      background-color: transparent;
+      font-size: 40px;
+      color: black;
+      font-family: Arial;
+      padding: 1rem;
+      border-radius: 5px;
+      border: none;
+}
+.geo:hover{
+      color:#6098FF;
+}
 
 .section .content .highlight:hover {
       color: red;
@@ -120,7 +132,7 @@ a {
 .textbox .btn {
       width: 120px;
       height: 40px;
-      background-color: #004fff;
+      background-color: #0b0b0b;
       color: #ffffff;
       top: 20px;
       border: none;
@@ -160,7 +172,7 @@ button:hover {
 
 .section .slidelist .textbox {position: absolute;z-index: 1;top: 50%;left: 50%;transform: translate(-50%, -50%);line-height: 1.6;text-align: center;}
 
-.section .slidelist .textbox h3 {font-size: 36px;color: #fff;;transform: translateY(30px);transition: all .5s;}
+.section .slidelist .textbox h3 {font-size: 36px;color: #0b0b0b;transform: translateY(30px);transition: all .5s;}
 
 .section .slidelist .textbox p {font-size: 16px;color: #fff;opacity: 0;transform: translateY(30px);transition: all .5s;}
 
@@ -212,6 +224,17 @@ button:hover {
 
 .section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background: lightcoral;}
 
+button.h3_tet{
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding: 1rem;
+      font-family: inherit;
+      font-size: 1.2rem;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0 , 0.5);
+      border-radius: 5px;
+      border: none;
+}
 .textbox .h3_tet:hover {
       cursor: pointer;
       }

@@ -25,7 +25,6 @@
       </div>
       <ul class="navbar_menu">
             <li><a href="self_umji.html">엄지</a></li>
-            <li><a href="self-byoungmun.html">병민</a></li>
             <li><a href="self_jihye.html">지혜</a></li>
             <li><a href="self_seojung.html">서정</a></li>
             <li><a href="main_yesol.html">예솔</a></li>
@@ -55,29 +54,27 @@
                   <li class="slideitem">
                         <a>
                               <div class="textbox">
-                                    <h3>로컬 스토리지 및 드래그 앤 드롭 구현</h3>
-                                    <p>GitHub에서 트렐로 클론코딩 소스를 받아서 해당 코드를 분석했습니다</p>
-                                    <p>오른쪽으로 슬라이드 시 버튼 활성화</p>
+                                    <button class="geo" onclick="location.href = '/self_umji.html';">Geolocation</button>
                               </div>
-                              <img src="./img/slide.jpg">
+                              <img src="./img/map2.JPG">
                         </a>
                   </li>
                   <li class="slideitem">
                         <a>
                               <div class="textbox">
-                                    <h3>유사 트렐로..</h3>
-                                    <button class="btn" onclick="alert_trello()">트렐로</button>
+                                    <h3>Local Storage & Drag/Drop</h3>
+                                    <button class="btn" onclick="alert_trello()">Trello</button>
                               </div>
-                              <img src="./img/slide.jpg">
+                              <img src="./img/trello_img.png">
                         </a>
                   </li>
                   <li class="slideitem">
                         <a>
 
                               <div class="textbox">
-                                    <h3 class="h3_tet" onclick="openPop()">테트리스</h3>
+                                    <button class="h3_tet" onclick="openPop()">start</button>
                               </div>
-                              <img src="./img/slide.jpg">
+                              <img src="./img/tetris.jpg">
                         </a>
                   </li>
 
@@ -125,7 +122,7 @@
                         <td><p class="box-title">좋아요&nbsp;&nbsp;</p></td>
                         <td> <div class="jb-wrap">
                               <div class="jb-image"><img src="img/heart.png" alt="하트이미지" onclick="loverCountAdd()" style="width: 70px;cursor: pointer"></div>
-                              <div class="jb-text" onclick="loverCountAdd()" style="cursor: pointer">
+                              <div class="jb-text" onclick="loverCountAdd()" sty아아 네네! 잠시만요 !넹le="cursor: pointer">
                                     <p id="lover"></p>
 
                               </div>
@@ -178,6 +175,9 @@
       ChannelIO('boot', {
             "pluginKey": "c6ed140b-1c53-4f0b-953f-271a53cee6ed"
       });
+
+
+
 </script>
 <!-- End Channel Plugin -->
 <script src="https://kit.fontawesome.com/17e886cad7.js" crossorigin="anonymous"></script>
