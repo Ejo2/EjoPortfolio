@@ -14,11 +14,13 @@ const drag = (event, taskId) => {   //드래그 이벤트 >> 해당 id값을 던
 
 const preventDefault = event => event.preventDefault();
 //드래그시의 브라우저상의 기본 동작을 방지하기 위함입니다 >> 웨일의 경우 이미지를 끌어오면 새탭으로 img파일이 열립니다. >>해당 행위 방지
+// => ?
 
 const drop = event => {//드롭이벤트 >> 이벤트:브라우저는 이벤트를 감지할 수 있으며 이벤트 발생 시에는 통지해 준다.
   // 이 과정을 통해 사용자와 웹페이지는 상호작용(Interaction)이 가능하게 된다. >>드롭이라는 이벤트를 브라우저가 감지하는거임 ㅇㅇ
   //
   //taskid >> 에 드래그한 task 의 id를 담습니다.
+
   const taskId = parseInt(event.dataTransfer.getData("id"));
   const task = document.getElementById(taskId);
   //task 에 taskid에 해당하는 task div 객체를 들고옵니다. <div class="task" id="1630078058313" draggable ondragstart="drag(event,1630078058313)">
