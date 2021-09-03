@@ -665,84 +665,46 @@
 
 
 <!-- drag & drop -->
+<!-- drag & drop -->
 <script>
-     var holder = document.getElementById('holder'),
-          state = document.getElementById('status');
-     
-     if (typeof window.FileReader === 'undefined') {
-          state.className = 'fail';
-     } else {
-          state.className = 'success';
-          
-     }
-     
-     holder.ondragover = function() {
-          this.className = 'hover';
-          return false;
-     };
-     holder.ondragend = function() {
-          this.className = '';
-          return false;
-     };
-     holder.ondrop = function(e) {
-          this.className = '';
-          e.preventDefault();
-          
-          var file = e.dataTransfer.files[0],
-               reader = new FileReader();
-          reader.onload = function(event) {
-               console.log(event.target);
-               holder.style.background = 'url(' + event.target.result + ') no-repeat cover 100%';
-          };
-          console.log(file);
-          reader.readAsDataURL(file);
-          
-          return false;
-     };
-     
-     
-     $('#holder').on("dragover", dragOver).on("dragleave", dragOver).on("drop", uploadFiles);
-     
-     function dragOver(e) {
-          e.stopPropagation();
-          e.preventDefault();
-          if (e.type == "dragover") {
-               $(e.target).css({
-                    "background-color": "black",
-                    "outline-offset": "-20px",
-               });
-          } else {
-               $(e.target).css({
-                    "background-color": "gray",
-                    "outline-offset": "-10px",
-               });
-          }
-     }
-     
-     function uploadFiles(e) {
-          e.stopPropagation();
-          e.preventDefault();
-          dragOver(e);
-          
-          e.dataTransfer = e.originalEvent.dataTransfer;
-          var files = e.target.files || e.dataTransfer.files;
-          if (files.length > 1) {
-               alert('이미지 한개만 올려주세요.');
-               return;
-          }
-          if (files[0].type.match(/image.*/)) {
-               $(e.target).css({
-                    "background-image": "url(" + window.URL.createObjectURL(files[0]) + ")",
-                    "outline": "none",
-                    "background-size":"100% 100%",
-          
-               });
-          } else {
-               alert('이미지가 아닙니다.');
-               return;
-          }
-     }
+      let holder = document.getElementById('holder'),
+              state = document.getElementById('status');
+
+
+      //요소나 텍스트 블록을 적합한 드롭 대상 위로 지나갈 때 발생한다
+      holder.ondragover = function () { this.className = 'hover'; return false; };
+      //드래그를 끝냈을 때 발생한다
+      holder.ondragend = function () { this.className = ''; return false; };
+
+
+
+      //요소나 텍스트 블록을 적합한 드롭 대상에 드롭했을 때 발생한다
+      holder.ondrop = function (e) {
+            this.className = '';
+            e.preventDefault(); //이벤트 동작 중단
+
+            let file = e.dataTransfer.files[0], //전달할 데이터를 지정 // [0] 번 이외에 인덱스 값을 추가로 가지는 것
+                    reader = new FileReader(); //FlieReader 객체를 이용하여 업로드된 파일을 읽을 수 있다
+            /*
+            File 객체는 <input> 태그를 이용하여 유저가 선택한 파일들의 결과로 반환된 FileList객체,
+            드래그 앤 드랍으로 반환된 DataTransfer 객체 혹은 HTMLCanvasElement의 mozGetAsFile() API로 부터 얻는다
+            */
+
+
+            //읽기 동작이 성공적으로 완료되었을 때
+            reader.onload = function (event) {
+                  console.log(event.target); //event.target은 이벤트버블링의 가장 마지막에 위치한 최하위의 요소를 반환 //클릭된 span 태그를 반환
+                  holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+            };
+            console.log(file);
+            reader.readAsDataURL(file); //컨텐츠를 특정 Blob 이나 File에서 읽어 오는 역할
+
+            return false;
+      };
+
+
 </script>
+
 
 </body>
 </html>
